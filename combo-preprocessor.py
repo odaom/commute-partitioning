@@ -10,6 +10,7 @@ Generalized for arbitrary commute data sources.
 import csv
 import time 
 from os import remove, path
+import sys
 
 
 debug = False # set to True for debug throttling
@@ -23,11 +24,11 @@ pajekFile = 'data-stage1/commutes.net' 					# Output file: Pajek format for feed
 
 if not path.isfile(sourceDatabaseFile):
 	print('Failed: No source file in ./data-src/commutes.csv')
-	exit()
+	sys.exit()
 
 if not path.isdir('data-stage1'):
 	print('Failed: Requires an output directory data-stage1')
-	exit()
+	sys.exit()
 
 # Look for a file ./data-src/subselection.txt
 # If it's there, we're running an extract; create a set from FIPS in that file
