@@ -1,0 +1,8 @@
+*.DS_Store
+.vscode/
+data-final/area_code_table_with_community_assignments.csv
+data-src/commutes.csv
+data-stage1/area_code_table.csv
+data-stage1/commutes.net
+data-stage1/commutes_comm_comboC++.txt
+data-final/qgis-source.csv
