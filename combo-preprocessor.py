@@ -23,11 +23,11 @@ nodesDatabaseFile = 'data-stage1/area_code_table.csv' 	# Output file: Lookup tab
 pajekFile = 'data-stage1/commutes.net' 					# Output file: Pajek format for feeding into Combo 
 
 if not path.isfile(sourceDatabaseFile):
-	print('Failed: No source file in ./data-src/commutes.csv')
+	print(f'Failed: Source file {sourceDatabaseFile} does not exist')
 	sys.exit()
 
 if not path.isdir('data-stage1'):
-	print('Failed: Requires an output directory data-stage1')
+	print(f'Failed: Requires an output directory data-stage1')
 	sys.exit()
 
 # Look for a file ./data-src/subselection.txt
